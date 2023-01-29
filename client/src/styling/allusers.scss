@@ -1,0 +1,25 @@
+table{
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+
+    >thead>tr>th{
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 0.6rem;
+    }
+    
+    >tbody{ 
+        border-collapse: collapse;
+        >tr>td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 0.6rem;
+
+        > .edit{
+            padding: 1rem;
+            background-color: red;
+        }
+      }
+    }
+}
