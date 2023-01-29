@@ -15,7 +15,6 @@ const addUsers = async(req,resp) =>{
     }
     console.log("user data",user)
 }
-module.exports = addUsers
 
 
 // code for get data from database
@@ -27,7 +26,11 @@ const getUsers = async(_,resp)=>{
         resp.status(404).json({message:error.message})
     }
 }
-module.exports = getUsers
+
+module.exports = {
+    addUsers: addUsers,
+    getUsers: getUsers
+}
 
 
 // // code for get data from database on basis of id
